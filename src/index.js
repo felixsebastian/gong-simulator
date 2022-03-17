@@ -3,7 +3,7 @@ const a = document.getElementById("app");
 const ringing = document.getElementById("ringing");
 let start = null;
 
-const sounds = [1, 2, 3, 4].map((n) => `src/gong${n}.mp3`);
+const sounds = [1, 2, 3, 4].map((n) => `gong${n}.mp3`);
 
 a.onmousedown = (e) => {
   start = { x: e.clientX, y: e.clientY, time: new Date().getTime() };

@@ -6,17 +6,17 @@ body {
 #app {
   width: 500px;
   height: 500px;
-  background-image: url(src/gong2.jpg);
+  background-image: url(gong2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: url(src/mallet.png), pointer;
+  cursor: url(mallet.png), pointer;
 }
 
 #ringing {
   width: 100%;
   height: 100%;
-  background-image: url(src/gong2-ringing.gif);
+  background-image: url(gong2-ringing.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
