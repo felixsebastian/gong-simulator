@@ -33,7 +33,7 @@ const getDistance = (e) =>
 const getSwing = (e) => getTime() * getAccuracy(e) * getDistance(e) * 100;
 
 const getHitpoint = (e) =>
-  (1 - limit(240)(cartesianDistance(e.clientX, 255, e.clientY, 150))) * 100;
+  (1 - limit(250)(cartesianDistance(e.clientX, 255, e.clientY, 170))) * 100;
 
 const getLoudness = (e) => Math.round((getSwing(e) + getHitpoint(e)) / 2);
 
