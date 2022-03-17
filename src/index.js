@@ -7,6 +7,8 @@ const sounds = Array.from(
   document.getElementsByTagName("audio")[0].children
 ).map((a) => a.src);
 
+console.log("sounds", sounds);
+
 a.onmousedown = (e) => {
   start = { x: e.clientX, y: e.clientY, time: new Date().getTime() };
 };
