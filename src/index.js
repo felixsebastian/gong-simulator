@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const size = 500;
 const a = document.getElementById("app");
 const ringing = document.getElementById("ringing");
