@@ -42,7 +42,7 @@ window.onmouseup = (e) => {
   const loudness = getLoudness(e);
   if (loudness === 0) return;
   ringing.className = "enabled";
-  ringing.style.transition = `opacity ${loudness / 20}s ease-out`;
+  ringing.style.transition = `opacity ${loudness / 8}s ease-out`;
 
   window.setTimeout(() => {
     ringing.className = "";
