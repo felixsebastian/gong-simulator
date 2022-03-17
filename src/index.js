@@ -52,3 +52,16 @@ window.onmouseup = (e) => {
   new Audio(file).play();
   start = null;
 };
+
+let pollLoadedInterval = window.setInterval(() => {
+  if (
+    sounds.every((a) => new Audio(a).networkState === 3) &&
+    Array.from(document.getElementsByClassName("preloadimage")).every(
+      (i) => i.complete
+    )
+  ) {
+    document.getElementById("content").style.display = "block";
+    document.getElementById("loader").style.display = "none";
+    window.clearInterval(pollLoadedInterval);
+  }
+}, 300);
