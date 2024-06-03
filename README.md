@@ -1,4 +1,6 @@
-This is a vanilla web app built with [Parcel](https://parceljs.org).
+# Gong simulator
+
+Live at: [https://csb-g0fn1k.vercel.app](https://csb-g0fn1k.vercel.app)
 
 ## Getting Started
 
